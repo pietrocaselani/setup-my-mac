@@ -1,10 +1,11 @@
 ---
-  - name: Configure Git
+  - name: Configure Git global config
     blockinfile:
       marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Git"
       path: "{{ansible_env.HOME}}/.gitconfig"
       block: "{{ lookup('file', 'git_config') }}"
       create: yes
+  - name: Configure Git user
     blockinfile:
       marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Git User"
       path: "{{ansible_env.HOME}}/.gitconfig"
