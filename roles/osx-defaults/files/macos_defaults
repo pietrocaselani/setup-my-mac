@@ -3,7 +3,9 @@
 # Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
-# For reference, see https://github.com/mathiasbynens/dotfiles/blob/master/.macos
+# For reference: 
+# https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
+# https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
 # Keybord: Set a blazingly fast keyboard repeat rate
 defaults write NSGlobalDomain InitialKeyRepeat -int 15
