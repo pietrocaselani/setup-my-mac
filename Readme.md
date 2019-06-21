@@ -36,6 +36,9 @@ Now you should edit the `config.yml` to set your information and then you can ju
 
 Also, some functions, aliases and git configurations will be added as well.
 
+* [.bash_profile](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/bash-profile/files/bash_profile)
+* [macOS](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/osx-defaults/files/macos_defaults) defaults values changed
+
 Some settings will only be applied after logging out.
 
 > "Why program by hand in five days what you can spend five years of your life automating?"
