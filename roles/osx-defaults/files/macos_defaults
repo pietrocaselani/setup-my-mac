@@ -33,9 +33,26 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 # Finder: Set default search folder to current folder
 defaults write com.apple.finder FXDefaultSearchScope -string "SCcf"
 
+# Finder: Open folders in new window instead of tab
+defaults write com.apple.finder FinderSpawnTab -bool false
+
+# Finder: allow text selection in Quick Look
+defaults write com.apple.finder QLEnableTextSelection -bool true
+
 # Finder: Set default Finder location to home
 defaults write com.apple.finder NewWindowTarget -string "PfLo" && \
 defaults write com.apple.finder NewWindowTargetPath -string "file://${HOME}"
+
+# Finder: Avoid creating .DS_Store files on network or USB volumes
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+
+# Expand the following File Info panes:
+# “General”, “Open with”, and “Sharing & Permissions”
+defaults write com.apple.finder FXInfoPanesExpanded -dict \
+	General -bool true \
+	OpenWith -bool true \
+    Privileges -bool true
 
 # Power Management: Disable computer sleep forever
 sudo systemsetup -setcomputersleep Never
