@@ -1,4 +1,6 @@
 ---
+  - name: Create Dev dirs
+    shell: mkdir -p ~/Documents/Dev/Personal
   - name: Configure Bash profile
     blockinfile:
       marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Bash profile"

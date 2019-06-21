@@ -157,11 +157,14 @@ defaults -currentHost write com.apple.screensaver idleTime 0
 
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 # TODO Fix - Seens like a problem in Mojave
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
+defaults write com.apple.driver.AppleBluetoothMultitouch.trackpad HIDScrollZoomModifierMask -int 262144
+defaults write com.apple.AppleMultitouchTrackpad HIDScrollZoomModifierMask -int 262144
+/usr/libexec/PlistBuddy -c "Set :closeViewScrollWheelToggle true" ~/Library/Preferences/com.apple.universalaccess.plist
 
-defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
-defaults write com.apple.universalaccess HIDScrollZoomModifierMask -int 262144
+# Remove all tags from contextual menu
+/usr/libexec/PlistBuddy -c "Delete :FavoriteTagNames" ~/Library/Preferences/com.apple.finder.plist
+/usr/libexec/PlistBuddy -c "Add :FavoriteTagNames array" ~/Library/Preferences/com.apple.finder.plist
 
 # Hot corners
 # Possible values:

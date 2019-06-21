@@ -2,6 +2,15 @@ eval "$(rbenv init -)"
 
 ### Functions ###
 
+function devfolder() {
+    cd $DEV_FOLDER
+}
+
+function personaldevfolder() {
+    devfolder
+    cd Personal
+}
+
 function xcode_kill() {
     killall Xcode
     xcrun -k
@@ -56,6 +65,7 @@ function git-trackfile() {
 
 export LC_ALL=en_US.UTF-8
 export LANG=en_US.UTF-8
+export DEV_FOLDER=${HOME}/Documents/Dev
 
 ### End Env Vars ###
 
