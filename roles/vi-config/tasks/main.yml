@@ -1,0 +1,7 @@
+---
+  - name: Configure vi
+    blockinfile:
+      marker: "\" {mark} ANSIBLE MANAGED BLOCK - Configure vi"
+      path: "{{ansible_env.HOME}}/.vimrc"
+      block: "{{ lookup('file', 'vimrc') }}"
+      create: yes

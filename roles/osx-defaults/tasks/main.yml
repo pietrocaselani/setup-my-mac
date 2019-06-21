@@ -1,0 +1,9 @@
+---
+  - name: Download wallpaper
+    get_url: 
+      url: "{{ wallpaper_url }}"
+      dest: "{{ wallpaper_path }}"
+  - name: Set wallpaper
+    command: osascript -e 'tell application "System Events" to set picture of every desktop to ("{{ wallpaper_path }}" as POSIX file as alias)'
+  - name: Configure macOS defaults
+    script: macos_defaults

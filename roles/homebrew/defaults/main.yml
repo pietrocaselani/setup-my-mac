@@ -1,0 +1,16 @@
+---
+homebrew_packages:
+  - docker
+  - jq
+
+homebrew_cask_packages:
+  - alfred
+  - caffeine
+  - enpass
+  - firefox
+  - iterm2
+  - postman
+  - slack
+  - spotify
+  - spectacle
+  - visual-studio-code

@@ -1,0 +1,13 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[alias]
+	c = checkout
+	s = status -s
+	b = branch
+	l = log --oneline
+[pager]
+	branch = false
+	log = false

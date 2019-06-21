@@ -1,0 +1,4 @@
+---
+karabiner_version: 12.5.0
+karabiner_dmg_name: "Karabiner-Elements-{{ karabiner_version }}"
+karabiner_dmg_url: "https://pqrs.org/osx/karabiner/files/{{ karabiner_dmg_name }}.dmg"

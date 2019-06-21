@@ -1,0 +1,12 @@
+---
+  - name: Configure Git
+    blockinfile:
+      marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Git"
+      path: "{{ansible_env.HOME}}/.gitconfig"
+      block: "{{ lookup('file', 'git_config') }}"
+      create: yes
+    blockinfile:
+      marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Git User"
+      path: "{{ansible_env.HOME}}/.gitconfig"
+      create: yes
+      block: "[user]\n\tname = {{ git_user_name }}\n\temail = {{ git_user_email }}"

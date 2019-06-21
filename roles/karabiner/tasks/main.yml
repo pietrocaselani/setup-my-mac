@@ -1,0 +1,13 @@
+---
+  - name: Ensure Karabiner is installed
+    stat:
+      path: "/Applications/Karabiner-Elements.app"
+    register: "is_karabiner_installed"
+  - name: Download Karabiner if necessary
+    get_url: 
+      url: "{{ karabiner_dmg_url }}"
+      dest: "{{ ansible_env.HOME }}/Downloads/{{ karabiner_dmg_name }}.dmg"
+    when: not is_karabiner_installed.stat.exists
+  - name: Install Karabiner if necessary
+    script: install_karabiner.sh {{ karabiner_version }}
+    when: not is_karabiner_installed.stat.exists

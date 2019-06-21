@@ -1,0 +1,13 @@
+---
+  - name: Ensure oh-my-zsh is installed
+    stat:
+      path: "{{ ansible_env.HOME }}/.oh-my-zsh"
+    register: "is_ohmyzsh_installed"
+  - name: Install oh-my-zsh if necessary
+    script: install_ohmyzsh.sh
+    when: not is_ohmyzsh_installed.stat.exists
+  - name: Configure oh-my-zsh
+    copy:
+      force: true
+      src: zshrc
+      dest: "{{ ansible_env.HOME }}/.zshrc"

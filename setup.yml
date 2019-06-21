@@ -1,0 +1,14 @@
+---
+- name: Setup macOS
+  hosts: localhost
+  pre_tasks:
+    - name: Load variables
+      include_vars: "config.yml"
+  roles:
+    - git-config
+    - vi-config
+    - bash-profile
+    - homebrew
+    - oh-my-zsh
+    - karabiner
+    - osx-defaults

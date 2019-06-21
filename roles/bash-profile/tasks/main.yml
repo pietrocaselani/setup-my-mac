@@ -1,0 +1,7 @@
+---
+  - name: Configure Bash profile
+    blockinfile:
+      marker: "# {mark} ANSIBLE MANAGED BLOCK - Configure Bash profile"
+      path: "{{ansible_env.HOME}}/.bash_profile"
+      block: "{{ lookup('file', 'bash_profile') }}"
+      create: yes

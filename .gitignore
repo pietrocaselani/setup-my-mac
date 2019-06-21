@@ -1,0 +1,6 @@
+*.retry
+.DS_Store
+
+# ansible-galaxy dependencies
+geerlingguy.homebrew
+elliotweiser.osx-command-line-tools
