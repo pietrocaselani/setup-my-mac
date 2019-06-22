@@ -11,7 +11,7 @@ function personaldevfolder() {
     cd Personal
 }
 
-function xcode_kill() {
+function xcode-kill() {
     killall Xcode
     xcrun -k
     xcodebuild -alltargets clean
