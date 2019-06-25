@@ -31,6 +31,7 @@ Now you should edit the `config.yml` to set your information and then you can ju
 # Which command line tools will be installed??
 
 * docker
+* hub
 * jq
 * oh-my-zsh
 
