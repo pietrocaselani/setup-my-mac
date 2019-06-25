@@ -155,6 +155,13 @@ defaults write com.apple.print.PrintingPrefs "Quit When Finished" -bool true
 # Disables screen saver
 defaults -currentHost write com.apple.screensaver idleTime 0
 
+# iTunes: Prevent iPhone from syncing automatically
+defaults write com.apple.iTunes DeviceBackupsDisabled -bool true
+defaults write com.apple.iTunes AutomaticDeviceBackupsDisabled -bool true
+
+# iTunes: Prevent from opening automatically when a iOS device is connected
+defaults write com.apple.iTunesHelper ignore-devices 1
+
 # Use scroll gesture with the Ctrl (^) modifier key to zoom
 # TODO Fix - Seens like a problem in Mojave
 # defaults write com.apple.universalaccess closeViewScrollWheelToggle -bool true
