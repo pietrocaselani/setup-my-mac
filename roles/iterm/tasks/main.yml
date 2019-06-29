@@ -1,0 +1,5 @@
+---
+  - name: Configure iTerm profile
+    copy:
+      src: pc_profile.json
+      dest: "{{ ansible_env.HOME }}/Library/Application Support/iTerm2/DynamicProfiles/PC.json"
