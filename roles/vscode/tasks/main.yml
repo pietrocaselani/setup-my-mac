@@ -4,3 +4,10 @@
       src: /Applications/Visual Studio Code.app/Contents/Resources/app/bin/code
       dest: /usr/local/bin/code
       state: link
+  - name: Install extensions
+    script: install_extensions.sh
+  - name: Install User settings
+    copy:
+      src: user_settings.json
+      dest: "{{ ansible_env.HOME }}/Library/Application Support/Code/User/settings.json"
+      mode: '0644'

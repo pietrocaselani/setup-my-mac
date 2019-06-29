@@ -1,0 +1,10 @@
+{
+    "workbench.startupEditor": "newUntitledFile",
+    "window.zoomLevel": 0,
+    "editor.minimap.enabled": true,
+    "files.insertFinalNewline": true,
+    "files.associations": {
+        ".nurc": "shellscript"
+    },
+    "files.trimTrailingWhitespace": true
+}
