@@ -22,6 +22,7 @@ Remember to input your password when asked.
 * Enpass
 * Firefox
 * iTerm2
+* Jetbrains Toolbox
 * Karabiner-Elements
 * Postman
 * Slack
