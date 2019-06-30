@@ -27,6 +27,7 @@ Remember to input your password when asked.
 * Slack
 * Spotify
 * Spectacle
+* Telegram
 * VSCode
 
 # Which command line tools will be installed??

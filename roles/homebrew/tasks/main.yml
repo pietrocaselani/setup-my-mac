@@ -11,7 +11,6 @@
     homebrew:
       name: "{{ homebrew_packages }}"
       state: "present"
-    when: is_homebrew_installed.stat.exists
   - name: Install Homebrew Cask using homebrew
     homebrew:
       name: cask
@@ -20,4 +19,3 @@
     homebrew_cask:
       name: "{{ homebrew_cask_packages }}"
       state: "present"
-    when: is_homebrew_installed.stat.exists
