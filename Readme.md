@@ -12,7 +12,8 @@ Then install Ansible:
 
 * `pip install ansible`
 
-Now you should edit the `config.yml` to set your information and then you can just use `./run.sh` to execute Ansible. Remember to input your password when asked.
+Now you can just use `./run.sh -n "Your Name" -e your@email.com` to execute Ansible.
+Remember to input your password when asked.
 
 # Which applications will be installed??
 

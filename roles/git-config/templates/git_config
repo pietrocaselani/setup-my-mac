@@ -11,3 +11,10 @@
 [pager]
 	branch = false
 	log = false
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg2
+[user]
+	name = {{ git_user_name }}
+	email = {{ git_user_email }}
