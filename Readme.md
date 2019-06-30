@@ -38,8 +38,8 @@ Remember to input your password when asked.
 
 Also, some functions, aliases and git configurations will be added as well.
 
-* [.bash_profile](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/bash-profile/files/bash_profile)
-* [macOS](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/osx-defaults/files/macos_defaults) defaults values changed
+* [.bash_profile](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/bash-profile/files/bash_profile.sh)
+* [macOS](https://github.com/pietrocaselani/setup-my-mac/blob/master/roles/osx-defaults/files/macos_defaults.sh) defaults values changed
 
 Some settings will only be applied after logging out.
 
