@@ -8,6 +8,12 @@
 	s = status -s
 	b = branch
 	l = log --oneline
+	b-delete-useless = "!f(){\
+		git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
+	}; f"
+	br-delete-useless-force = "!f(){\
+		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
+	}; f"
 [pager]
 	branch = false
 	log = false
