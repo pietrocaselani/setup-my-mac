@@ -24,3 +24,5 @@
 [user]
 	name = {{ git_user_name }}
 	email = {{ git_user_email }}
+[core]
+	excludesfile = {{ ansible_env.HOME }}/.gitignore_global
