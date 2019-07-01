@@ -213,3 +213,17 @@ defaults write com.apple.dock wvous-bl-modifier -int 0
 # Bottom right screen corner → no-op
 defaults write com.apple.dock wvous-br-corner -int 0
 defaults write com.apple.dock wvous-br-modifier -int 0
+
+# Kill apps
+for app in "Activity Monitor" \
+	"Address Book" \
+	"cfprefsd" \
+	"Dock" \
+	"Finder" \
+	"Messages" \
+	"Photos" \
+	"Safari" \
+	"ControlStrip" \
+	"SystemUIServer"; do
+	killall "${app}"
+done
