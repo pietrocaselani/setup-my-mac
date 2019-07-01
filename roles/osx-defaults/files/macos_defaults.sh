@@ -1,9 +1,12 @@
 #!/usr/bin/env bash
 
+COMPUTER_NAME=$1
+LOCAL_HOST_NAME=$2
+
 # Close any open System Preferences panes, to prevent them from overriding settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
-# For reference: 
+# For reference:
 # https://pawelgrzybek.com/change-macos-user-preferences-via-command-line/
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
@@ -119,6 +122,12 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm:ss"
 
 # MenuBar: Flash separators (I like to count the seconds)
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
+
+# Network: Sets the computer name
+sudo scutil --set ComputerName "$COMPUTER_NAME"
+sudo scutil --set HostName "$COMPUTER_NAME"
+sudo scutil --set LocalHostName "$LOCAL_HOST_NAME"
+sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.server NetBIOSName -string "$COMPUTER_NAME"
 
 # Login Items: Add Alfred to Login Items
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 4", path:"/Applications/Alfred 4.app", hidden:false}'

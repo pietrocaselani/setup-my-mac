@@ -12,7 +12,7 @@ Then install Ansible:
 
 * `pip install ansible`
 
-Now you can just use `./run.sh -n "Your Name" -e your@email.com` to execute Ansible.
+Now you can just use `./run.sh -n "Your Name" -e your@email.com -c "Your Computer Name"` to execute Ansible.
 Remember to input your password when asked.
 
 # Which applications will be installed??
