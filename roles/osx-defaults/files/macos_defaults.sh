@@ -123,6 +123,13 @@ defaults write com.apple.menuextra.clock DateFormat -string "EEE d MMM HH:mm:ss"
 # MenuBar: Flash separators (I like to count the seconds)
 defaults write com.apple.menuextra.clock FlashDateSeparators -bool true
 
+# MenuBar: Add Bluetooth, AirPort (WiFi), Battery, Volume
+defaults write com.apple.systemuiserver menuExtras -array \
+	"/System/Library/CoreServices/Menu Extras/Bluetooth.menu" \
+	"/System/Library/CoreServices/Menu Extras/AirPort.menu" \
+	"/System/Library/CoreServices/Menu Extras/Battery.menu" \
+	"/System/Library/CoreServices/Menu Extras/Volume.menu"
+
 # Network: Sets the computer name
 sudo scutil --set ComputerName "$COMPUTER_NAME"
 sudo scutil --set HostName "$COMPUTER_NAME"
