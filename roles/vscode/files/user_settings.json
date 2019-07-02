@@ -4,7 +4,11 @@
     "editor.minimap.enabled": true,
     "files.insertFinalNewline": true,
     "files.associations": {
-        ".nurc": "shellscript"
+        "Podfile": "ruby",
+        "Fastfile": "ruby",
+        "Appfile": "ruby",
+        "Matchfile": "ruby",
+        "Pluginfile": "ruby"
     },
     "files.trimTrailingWhitespace": true
 }
