@@ -1,6 +1,7 @@
 # Custom config here
 
 source ${HOME}/.bash_profile
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh

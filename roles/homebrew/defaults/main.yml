@@ -3,6 +3,7 @@ homebrew_packages:
   - docker
   - hub
   - jq
+  - zsh-autosuggestions
 
 homebrew_cask_packages:
   - alfred

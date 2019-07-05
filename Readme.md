@@ -37,6 +37,7 @@ Remember to input your password when asked.
 * hub
 * jq
 * oh-my-zsh
+* zsh-autosuggestions
 
 Also, some functions, aliases and git configurations will be added as well.
 
