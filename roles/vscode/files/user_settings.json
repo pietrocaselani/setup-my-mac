@@ -2,6 +2,11 @@
     "workbench.startupEditor": "newUntitledFile",
     "window.zoomLevel": 0,
     "editor.minimap.enabled": true,
+    "editor.lineHeight": 16,
+    "editor.fontWeight": "400",
+    "editor.renderWhitespace": "all",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
     "files.insertFinalNewline": true,
     "files.associations": {
         "Podfile": "ruby",
@@ -10,5 +15,11 @@
         "Matchfile": "ruby",
         "Pluginfile": "ruby"
     },
-    "files.trimTrailingWhitespace": true
+    "files.trimTrailingWhitespace": true,
+    "workbench.colorTheme": "Signed Dark Pro",
+    "eslint.autoFixOnSave": true,
+    "eslint.alwaysShowStatus": true,
+    "files.exclude": {
+        "**/.git": true
+    }
 }
