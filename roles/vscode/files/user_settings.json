@@ -17,7 +17,6 @@
         "Pluginfile": "ruby"
     },
     "files.trimTrailingWhitespace": true,
-    "workbench.colorTheme": "Signed Dark Pro",
     "eslint.autoFixOnSave": true,
     "eslint.alwaysShowStatus": true,
     "files.exclude": {
