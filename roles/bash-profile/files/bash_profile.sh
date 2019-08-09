@@ -1,15 +1,17 @@
+#!/usr/bin/env bash
+
 eval "$(rbenv init -)"
 eval "$(hub alias -s)"
 
 ### Functions ###
 
 function devfolder() {
-    cd $DEV_FOLDER
+    cd "$DEV_FOLDER" || exit 1
 }
 
 function personaldevfolder() {
     devfolder
-    cd Personal
+    cd Personal || exit 1
 }
 
 function xcode-kill() {
@@ -31,11 +33,11 @@ function simulator-delete-unavailables() {
 }
 
 function killapp() {
-	kill -9 $(ps aux | grep $1 | grep -v grep | awk '{print $2}')
+	kill -9 "$(pgrep "$1" | grep -v grep | awk '{print $2}')"
 }
 
 function isrunning() {
-	ps aux | grep $1 | grep -v grep | awk '{print $2}'
+	pgrep "$1" | grep -v grep | awk '{print $2}'
 }
 
 function password() {
@@ -48,7 +50,7 @@ function login-items-list() {
 }
 
 function git-parent-branch() {
-	current_branch=`git rev-parse --abbrev-ref HEAD`
+	current_branch=$(git rev-parse --abbrev-ref HEAD)
 	git show-branch -a | awk -F'[]^~[]' '/\*/ && !/'"$current_branch"'/ {print $2;exit}'
 }
 
