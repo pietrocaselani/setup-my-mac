@@ -5,6 +5,7 @@ homebrew_packages:
   - jq
   - zsh-autosuggestions
   - shellcheck
+  - gnupg
 
 homebrew_cask_packages:
   - alfred
