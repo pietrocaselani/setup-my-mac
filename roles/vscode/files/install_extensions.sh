@@ -1,5 +1,13 @@
 #!/usr/bin/env bash
 
-code --install-extension misogi.ruby-rubocop
-code --install-extension svanimpe.stencil
-code --install-extension dbaeumer.vscode-eslint
+EXTENSIONS=(
+    "misogi.ruby-rubocop"
+    "svanimpe.stencil"
+    "dbaeumer.vscode-eslint"
+    "wakatime.vscode-wakatime"
+    "timonwong.shellcheck"
+)
+
+for ext in ${EXTENSIONS[*]}; do
+    code --install-extension "$ext"
+done

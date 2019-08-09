@@ -4,6 +4,7 @@ homebrew_packages:
   - hub
   - jq
   - zsh-autosuggestions
+  - shellcheck
 
 homebrew_cask_packages:
   - alfred
