@@ -6,6 +6,7 @@ homebrew_packages:
   - zsh-autosuggestions
   - shellcheck
   - gnupg
+  - git-lfs
 
 homebrew_cask_packages:
   - alfred
