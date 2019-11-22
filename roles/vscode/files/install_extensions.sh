@@ -6,6 +6,7 @@ EXTENSIONS=(
     "dbaeumer.vscode-eslint"
     "wakatime.vscode-wakatime"
     "timonwong.shellcheck"
+    "mohsen1.prettify-json"
 )
 
 for ext in ${EXTENSIONS[*]}; do
