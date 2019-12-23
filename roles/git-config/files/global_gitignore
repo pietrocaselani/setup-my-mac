@@ -44,8 +44,6 @@ Logs/
 .scannerwork
 .vscode
 .env
-Pods/
-.env
 /Index/
 /vendor
 .bundle
