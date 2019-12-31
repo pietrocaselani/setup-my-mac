@@ -37,7 +37,7 @@ function killapp() {
 }
 
 function isrunning() {
-	pgrep "$1" | grep -v grep | awk '{print $2}'
+	pgrep -i "$1"
 }
 
 function password() {
