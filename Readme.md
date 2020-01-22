@@ -19,6 +19,7 @@ Remember to input your password when asked.
 
 * Alfred
 * Caffeine
+* Docker
 * Enpass
 * Firefox
 * iTerm2
