@@ -11,7 +11,7 @@
 	b-delete-useless = "!f(){\
 		git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
 	}; f"
-	br-delete-useless-force = "!f(){\
+	b-delete-useless-force = "!f(){\
 		git branch | grep -v "master" | grep -v ^* | xargs git branch -D;\
 	}; f"
 [pager]
