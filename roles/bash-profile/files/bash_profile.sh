@@ -24,6 +24,15 @@ function xcode-kill() {
     rm -rf ~/Library/Caches/com.apple.dt.Xcode/*
 }
 
+function record-simulator() {
+    name=${1:-"movie"}
+    xcrun simctl io booted recordVideo "${name}.mov"
+}
+
+function mov2gif() {
+    ffmpeg -i "$1" -vf scale=320:-1 -r 10 -f gif -y "$1.gif"
+}
+
 function xcode-deriveddata-open() {
     open ~/Library/Developer/Xcode/DerivedData/
 }
