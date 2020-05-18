@@ -2,7 +2,7 @@
 homebrew_packages:
   - bats-core
   - docker
-  - hub
+  - github/gh/gh
   - jq
   - zsh-autosuggestions
   - shellcheck

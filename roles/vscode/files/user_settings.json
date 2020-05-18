@@ -14,7 +14,9 @@
         "Fastfile": "ruby",
         "Appfile": "ruby",
         "Matchfile": "ruby",
-        "Pluginfile": "ruby"
+        "Pluginfile": "ruby",
+        "Dangerfile": "ruby",
+        "*.stencil": "stencil"
     },
     "files.trimTrailingWhitespace": true,
     "eslint.autoFixOnSave": true,
