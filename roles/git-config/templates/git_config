@@ -8,6 +8,7 @@
 	s = status -s
 	b = branch
 	l = log --oneline
+	list-versions = "for-each-ref --sort=creatordate --format '%(refname)' refs/tags"
 	b-delete-useless = "!f(){\
 		git branch | grep -v "master" | grep -v ^* | xargs git branch -d;\
 	}; f"
