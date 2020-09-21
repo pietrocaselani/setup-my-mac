@@ -28,7 +28,7 @@ Remember to input your password when asked.
 * Postman
 * Slack
 * Spotify
-* Spectacle
+* [Rectangle](https://github.com/rxhanson/Rectangle)
 * Telegram
 * VSCode
 
