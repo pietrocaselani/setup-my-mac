@@ -1,7 +1,6 @@
 #!/usr/bin/env bash
 
 eval "$(rbenv init -)"
-eval "$(hub alias -s)"
 
 ### Functions ###
 

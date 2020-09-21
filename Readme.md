@@ -35,7 +35,7 @@ Remember to input your password when asked.
 # Which command line tools will be installed??
 
 * docker
-* hub
+* github cli
 * jq
 * oh-my-zsh
 * zsh-autosuggestions
