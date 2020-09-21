@@ -8,6 +8,7 @@ homebrew_packages:
   - shellcheck
   - gnupg
   - git-lfs
+  - rbenv
 
 homebrew_cask_packages:
   - alfred
