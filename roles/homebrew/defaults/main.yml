@@ -20,6 +20,6 @@ homebrew_cask_packages:
   - postman
   - slack
   - spotify
-  - spectacle
+  - rectangle
   - telegram
   - visual-studio-code
