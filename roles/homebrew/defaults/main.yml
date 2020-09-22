@@ -2,6 +2,7 @@
 homebrew_packages:
   - bats-core
   - docker
+  - ffmpeg
   - gh
   - jq
   - zsh-autosuggestions
