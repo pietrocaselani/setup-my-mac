@@ -139,9 +139,6 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.smb.serve
 # Login Items: Add Alfred to Login Items
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Alfred 4", path:"/Applications/Alfred 4.app", hidden:false}'
 
-# Login Items: Add Spectable to Login Items
-osascript -e 'tell application "System Events" to make login item at end with properties {name: "Spectacle", path:"/Applications/Spectacle.app", hidden:false}'
-
 # Login Items: Add Karabiner-Elements to Login Items
 osascript -e 'tell application "System Events" to make login item at end with properties {name: "Karabiner-Elements", path:"/Applications/Karabiner-Elements.app", hidden:false}'
 
