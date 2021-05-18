@@ -21,7 +21,7 @@
 [commit]
 	gpgsign = true
 [gpg]
-	program = gpg2
+	program = gpg
 [user]
 	name = {{ git_user_name }}
 	email = {{ git_user_email }}
