@@ -2,7 +2,7 @@
 
 function helpFunction() {
    echo ""
-   echo "Usage: $0 -n \"Blob Fullname\" -e blob@email.com -c \"Blob's Macbook\""
+   echo "Usage: $0 -n 'Blob Fullname' -e blob@email.com -c \"Blob's Macbook\""
    echo -e "\t-n Git user name"
    echo -e "\t-e Git user email"
    echo -e "\t-c Computer name"

@@ -70,6 +70,10 @@ function git-trackfile() {
 	git update-index --no-assume-unchanged $1
 }
 
+function fix-sound() {
+    sudo launchctl stop com.apple.audio.coreaudiod && sudo launchctl start com.apple.audio.coreaudiod
+}
+
 ### End Functions ###
 
 ### Env Vars ###
